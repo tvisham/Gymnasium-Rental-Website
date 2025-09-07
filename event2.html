@@ -1,0 +1,85 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JHS Gymnasium</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="eventstyle.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="title">
+                <span class="title-text">JHS Gymnasium</span>
+            </div>
+
+            <div class="main-menu">
+                <ul>
+                    <li><a href="../index.html">HOME</a></li>
+                    <li><a href="../events.html">EVENTS & TICKETS</a></li>
+                    <li><a href="../booking.html">EVENT BOOKING</a></li>
+                    <li><a href="../information.html">VENUE INFORMATION</a></li>
+                </ul>
+            </div>
+
+            <button class="hamburger-button">
+                <div class="hamburger-line"></div>
+                <div class="hamburger-line"></div>
+                <div class="hamburger-line"></div>
+            </button>
+
+            <div class="mobile-menu">
+                <ul>
+                    <li><a href="../index.html">HOME</a></li>
+                    <li><a href="../events.html">EVENTS & TICKETS</a></li>
+                    <li><a href="../booking.html">EVENT BOOKING</a></li>
+                    <li><a href="../information.html">VENUE INFORMATION</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="event-details-container">
+        <div class="event-image">
+            <img src="../img/event2.jpg" alt="Event Image">
+        </div>
+        
+        <div class="event-info">
+            <h3 class="event-title">Agriculture Trade Show</h3>
+            <p class="time">Date & Time: 9:30 AM, March 15-16</p>
+            <p class="description">
+                Dive into the world of agriculture at this two-day trade show, where industry leaders, farmers, and experts gather to showcase the latest innovations and trends in the field. Discover cutting-edge farming technologies, sustainable practices, and valuable insights into the future of agriculture. With a wide array of exhibitors, interactive demonstrations, and networking opportunities, this event is a must-attend for anyone involved or interested in agriculture.
+            </p>
+            <strong>Price:</strong> $10 per ticket
+            <p class="organizer">Organized by: Green Fields Co.</p>
+            
+            <button class="ticket-buy-btn" id="buyTicketBtn">Buy Tickets</button>
+
+            <div class="popup" id="ticketPopup">
+                <div class="popup-content">
+                    <span class="close-btn" id="closePopupBtn">&times;</span>
+                    <h3>Ticket Purchase</h3>
+                    <form id="ticketForm">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+                        
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                        
+                        <label for="ticketCount">Number of Tickets:</label>
+                        <input type="number" id="ticketCount" name="ticketCount" required min="1">
+                        
+                        <button type="submit" class="submit-btn">Submit</button>
+                
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="..\event-pages\eventscript.js"></script>
+<body>

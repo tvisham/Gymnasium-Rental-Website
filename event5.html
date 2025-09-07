@@ -1,0 +1,84 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JHS Gymnasium</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="eventstyle.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="title">
+                <span class="title-text">JHS Gymnasium</span>
+            </div>
+            <div class="main-menu">
+                <ul>
+                    <li><a href="../index.html">HOME</a></li>
+                    <li><a href="../events.html">EVENTS & TICKETS</a></li>
+                    <li><a href="../booking.html">EVENT BOOKING</a></li>
+                    <li><a href="../information.html">VENUE INFORMATION</a></li>
+                </ul>
+            </div>
+
+            <button class="hamburger-button">
+                <div class="hamburger-line"></div>
+                <div class="hamburger-line"></div>
+                <div class="hamburger-line"></div>
+            </button>
+
+            <div class="mobile-menu">
+                <ul>
+                    <li><a href="../index.html">HOME</a></li>
+                    <li><a href="../events.html">EVENTS & TICKETS</a></li>
+                    <li><a href="../booking.html">EVENT BOOKING</a></li>
+                    <li><a href="../information.html">VENUE INFORMATION</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="event-details-container">
+        <div class="event-image">
+            <img src="../img/event5.jpg" alt="Event Image">
+        </div>
+        
+        <div class="event-info">
+            <h3 class="event-title">Jazz Night</h3>
+            <p class="time">Date & Time: 8:00 PM, March 23</p>
+            <p class="description">
+                Immerse yourself in the smooth and soulful sounds of live jazz at Jazz Night. The event will feature top-tier jazz musicians performing a blend of classic standards and contemporary pieces, creating a relaxing and intimate atmosphere. Whether you're an old-time jazz lover or new to the genre, this evening is sure to offer an unforgettable musical experience, complete with rich harmonies, sultry saxophone melodies, and captivating improvisation.
+            </p>
+            <strong>Price:</strong> $20 per ticket
+            <p class="organizer">Organized by: John Doe Events</p>
+            
+            <button class="ticket-buy-btn" id="buyTicketBtn">Buy Tickets</button>
+
+            <div class="popup" id="ticketPopup">
+                <div class="popup-content">
+                    <span class="close-btn" id="closePopupBtn">&times;</span>
+                    <h3>Ticket Purchase</h3>
+                    <form id="ticketForm">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+                        
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                        
+                        <label for="ticketCount">Number of Tickets:</label>
+                        <input type="number" id="ticketCount" name="ticketCount" required min="1">
+                        
+                        <button type="submit" class="submit-btn">Submit</button>
+                
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="..\event-pages\eventscript.js"></script>
+<body>
