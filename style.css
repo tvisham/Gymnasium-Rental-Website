@@ -1,0 +1,548 @@
+/* Global Styles */
+body, html {
+    background-color: #FFFFFF;
+    font-family: 'Poppins', sans-serif; 
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Computer Navigation Bar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 20px;
+    background-color: #588157;
+    height: 70px;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+
+.title {
+    margin-left: 0;
+}
+
+.title-text {
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    font-size: 24px;
+    font-weight: 600;
+    margin-left: 30px; 
+}
+
+.main-menu ul {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.main-menu ul li {
+    margin-left: 30px;
+}
+
+.main-menu ul li a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+}
+
+.main-menu ul li a:hover {
+    color: #3A5A40;
+}
+
+.hamburger-button {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.hamburger-button .hamburger-line {
+    width: 30px;
+    height: 3px;
+    margin: 6px 0;
+    background-color: white;
+}
+
+/* Mobile Menu */
+.mobile-menu {
+    display: none;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+}
+
+.mobile-menu.active {
+    display: block;
+}
+
+.mobile-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.mobile-menu ul li {
+    padding: 15px 20px;
+    text-align: center;
+}
+
+.mobile-menu ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+.mobile-menu ul li a:hover {
+    color: #ddd;
+}
+
+/* Media Query for Mobile */
+@media (max-width: 768px) {
+    .navbar .main-menu {
+        display: none;
+    }
+    .hamburger-button {
+        display: block;
+    }
+}
+
+/* --- Home Page --- */
+/* Carousel and Text Container */
+.carousel-text-container {
+    display: flex;
+    align-items: center; 
+    margin-top: 48px;
+}
+
+/* Carousel Styles */
+.carousel-container {
+    width: 715px;
+    height: 407px;
+    overflow: hidden;
+    position: relative;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-right: 0px;
+    margin-left: 140px; 
+}
+
+.carousel {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.carousel img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+ 
+/* Carousel Buttons */ 
+.prev-btn,.next-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    z-index: 100;
+    font-size: 30px;
+    font-weight: bold;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.prev-btn {
+    left: 10px;
+}
+
+.next-btn {
+    right: 10px;
+}
+
+/* Text Section */
+.text-section {
+    width: 484px;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-left:40px; 
+}
+
+/* Subtitle "Event Rentals" */
+.subtitle {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.25em;
+    color: #333;
+    margin-bottom: 5px; 
+}
+
+/* Title "Host Your Next Event With Us" */
+.title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 4.6875em;
+    font-weight: 700;
+    color: #588157;
+    margin-top:5px; 
+    margin-bottom: 10px;  
+    line-height: 65px;  
+}
+
+/* Contact Button "Contact Us" */
+.contact-button {
+    width:160px; 
+    height: 50px; 
+    background-color: #4CAF50;
+    color: white;
+    font-size: 1.25em;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-button:hover {
+    background-color: #3e8e41;
+}
+
+
+/* Mobile Adjustments */
+@media (max-width: 768px) {
+    .carousel-text-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .carousel-container {
+        width: 80%;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+    .text-section {
+        width: 80%;
+        text-align: center;
+    }
+}
+
+/* Featured Events Section */
+.featured-events {
+    padding: 50px 0;
+    margin-left: 140px; 
+}
+
+.featured-title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.25em;
+    color: #588157;
+    margin-bottom: 28px;
+}
+
+.featured-events-container {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 130px;
+} 
+
+/* --- Events & Tickets --- */
+.events {
+    padding: 50px 0;
+    margin-left: 140px; 
+}
+
+.page-title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 3.5em;
+    color: #588157;
+    margin-bottom: 28px;
+    margin-top: -11px;
+}
+
+.events-container {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 130px;
+    flex-wrap: wrap;
+    margin-right: 130px;
+} 
+
+.event-item {
+    display: block;
+    width: 379px;
+    height: 300px;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-right: 24px;
+    margin-bottom: 50px;
+    text-decoration: none; 
+    transition: all 0.3s ease;
+}
+
+.event-item:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px); 
+}
+
+
+.event-image img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.event-info {
+    padding: 0px;
+}
+
+.event-info h4 {
+    font-size: 1.5em;
+    font-weight: 600;
+    color: #333;
+    margin-left: 20px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.event-info p {
+    font-size: 1em;
+    color: #555;
+    margin-top: 5px;
+    margin-bottom: 5px; 
+    margin-left: 20px;
+}
+
+
+/* Event Booking Section */
+.event-booking-container {
+    margin: 50px 140px;
+}
+
+/* Venue Description */
+.venue-description {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.125em;
+    color: #555;
+    line-height: 1.6;
+    margin-top: -20px; 
+    margin-bottom: 40px;
+}
+
+/* Features Section */
+/* Features and Calendar Container */
+.features-calendar-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px; 
+    margin-bottom: 40px;
+}
+
+/* Features Section */
+.features-section {
+    width: 40%; 
+    height: 420px; 
+    background-color: #f8f8f8;
+    border-radius: 10px;
+    margin-bottom: 40px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px; 
+}
+
+/* Calendar Container */
+.calendar-container {
+    width: 60%; 
+    display: flex;
+    justify-content: center; 
+}
+
+.calendar-container iframe {
+    width: 100%; 
+    height: 460px;
+}
+
+.section-title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2em;
+    color: #588157;
+    margin-top: 3px; 
+    margin-bottom: 5px;
+    margin-left: 15px; 
+}
+
+.section-list {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.35em;
+    color: #555;
+    list-style-type: disc;
+    margin-top: 5px; 
+    margin-bottom: 0px; 
+    margin-left: 17px;
+}
+
+/* Contact Form Section */
+.contact-form-section {
+    margin-top: 40px;
+}
+
+.contact-title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.25em;
+    color: #588157;
+    margin-bottom: 20px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1em;
+    color: #333;
+    margin-bottom: 8px;
+}
+
+input, textarea {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1em;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    width: 100%;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.submit-button {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.25em;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+    background-color: #3e8e41;
+}
+
+.venuepage-title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 3.5em;
+    color: #588157;
+    margin-bottom: 28px;
+    margin-top: 39px;
+    margin-left: 140px; 
+}
+
+/* Policies Section */
+.info-section {
+    background-color: #f8f8f8;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    width: 77.5%; 
+    margin-left: auto; 
+    margin-right: auto; 
+}
+
+/* Amenities and Seating Chart Section */
+.amenities-seating {
+    display: flex;
+    justify-content: center; 
+    gap: 40px;
+    width: 80%;
+    margin-left: auto; 
+    margin-right: auto; 
+}
+
+.amenities {
+    background-color: #f8f8f8;
+    border-radius: 15px;
+    padding: 20px;
+    width: 40%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    height: auto; 
+}
+
+.seating-chart {
+    background-color: #f8f8f8;
+    border-radius: 15px;
+    padding: 20px;
+    width: 60%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.seating-chart img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+/* Mobile Adjustments */
+@media (max-width: 768px) {
+    .venue-location {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .google-map iframe {
+        width: 100%;
+        height: 250px;
+        margin-bottom: 20px;
+    }
+
+    .location-text {
+        width: 80%;
+        text-align: center;
+    }
+
+    .info-section, .amenities, .seating-chart {
+        width: 100%;
+    }
+
+    .amenities-seating {
+        flex-direction: column;
+        gap: 30px;
+        justify-content: center; /* Center horizontally */
+    }
+
+    .contact-button {
+        width: 100%;
+        font-size: 1.5em;
+    }
+}
+

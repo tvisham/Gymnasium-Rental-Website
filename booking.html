@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Booking</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/fullcalendar@3.2.0/dist/fullcalendar.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/moment@2.29.1/moment.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/fullcalendar@3.2.0/dist/fullcalendar.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+      <div class="container">
+          <div class="title">
+              <span class="title-text">JHS Gymnasium</span>
+          </div>
+
+          <div class="main-menu">
+              <ul>
+                  <li><a href="index.html">HOME</a></li>
+                  <li><a href="events.html">EVENTS & TICKETS</a></li>
+                  <li><a href="booking.html">EVENT BOOKING</a></li>
+                  <li><a href="information.html">VENUE INFORMATION</a></li>
+              </ul>
+          </div>
+
+          <button class="hamburger-button">
+              <div class="hamburger-line"></div>
+              <div class="hamburger-line"></div>
+              <div class="hamburger-line"></div>
+          </button>
+
+          <div class="mobile-menu">
+              <ul>
+                  <li><a href="index.html">HOME</a></li>
+                  <li><a href="events.html">Events</a></li>
+                  <li><a href="tickets.html">Tickets</a></li>
+                  <li><a href="information.html">Information</a></li>
+              </ul>
+          </div>
+      </div>
+  </nav>
+
+  <div class="event-booking-container">
+    <h1 class="page-title">Event Booking</h1>
+    
+    <!-- Venue Description -->
+    <div class="venue-description">
+        <p>Welcome to the JHS Gymnasium, an ideal location to host your events. Whether it's a sports tournament, a concert, or a community gathering, our versatile venue is designed to accommodate all types of events with top-tier facilities.</p>
+    </div>
+
+    <!-- Features and Calendar Section -->
+    <div class="features-calendar-container">
+        <!-- Features Section -->
+        <div class="features-section">
+            <h3 class="section-title">Features</h3>
+            <ul class="section-list">
+                <li>Spacious seating arrangements, seats up to 3500</li>
+                <li>High-quality sound and lighting system</li>
+                <li>State-of-the-art gymnasium facilities</li>
+                <li>Ample parking space for guests</li>
+                <li>Fully equipped kitchen for catering services</li>
+                <li>Accessibility for people with disabilities</li>
+            </ul>
+        </div>
+
+        <!-- Google Calendar Section -->
+        <div class="calendar-container">
+            <iframe src="https://calendar.google.com/calendar/embed?height=460&wkst=1&ctz=America%2FLos_Angeles&showPrint=0&title=JHS%20Gymnasium%20Rentals&showTitle=0&showTz=0&src=ZWNjMmE0ZjcwZGY0MjZlMDQ4M2YzOGQ0OWNmMzk3ZjVjN2MzZjA3YWQ2YmFiMjVhZmQzZGY3ZDkxMmUwZTE2ZUBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&color=%237986CB" style="border-width:0" width="550" height="460" frameborder="0" scrolling="no"></iframe>
+        </div>
+    </div>
+
+    <!-- Contact Form Section -->
+    <div class="contact-form-section">
+        <h3 class="contact-title">Contact Us</h3>
+        <form class="contact-form">
+            <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="event-date">Event Date</label>
+                <input type="date" id="event-date" name="event-date" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+            </div>
+            <button type="submit" class="submit-button">Submit</button>
+        </form>
+    </div>
+</div>
+
+    <script src="script.js"></script>
+</body>
+</html>

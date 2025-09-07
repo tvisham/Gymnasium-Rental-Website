@@ -1,0 +1,112 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JHS Gymnasium</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="title">
+                <span class="title-text">JHS Gymnasium</span>
+            </div>
+
+            <div class="main-menu">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="events.html">EVENTS & TICKETS</a></li>
+                    <li><a href="booking.html">EVENT BOOKING</a></li>
+                    <li><a href="information.html">VENUE INFORMATION</a></li>
+                </ul>
+            </div>
+
+            <button class="hamburger-button">
+                <div class="hamburger-line"></div>
+                <div class="hamburger-line"></div>
+                <div class="hamburger-line"></div>
+            </button>
+
+            <div class="mobile-menu">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="tickets.html">Tickets</a></li>
+                    <li><a href="information.html">Information</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Carousel and Text Section -->
+    <div class="carousel-text-container">
+        <!-- Carousel -->
+        <div class="carousel-container">
+            <div class="carousel">
+                <img src="img\image1.png" alt="Image 1">
+                <img src="img\image2.png" alt="Image 2">
+                <img src="img\image3.png" alt="Image 3">
+            </div>
+            <button class="prev-btn">&lt;</button>
+            <button class="next-btn">&gt;</button>
+        </div>
+
+        <!-- Text Section -->
+        <div class="text-section">
+            <h3 class="subtitle">Event Rentals</h3>
+            <h2 class="title">HOST YOUR<br>NEXT EVENT<br>WITH US</h2>
+            <a href = "booking.html">
+            <button class="contact-button">Contact Us</button>
+            </a>
+        </div>
+    </div>
+
+    <!-- Featured Events Section -->
+    <div class="featured-events">
+    <h3 class="featured-title">Featured Events</h3>
+    <div class="featured-events-container">
+        <a href="event-pages\event1.html" class="event-item">
+            <div class="event-image">
+                <img src="img\event1.jpg" alt="Event 1">
+            </div>
+            <div class="event-info">
+                <h4>Basketball Tournament</h4>
+                <p>6:30 PM, March 10</p>
+            </div>
+        </a>
+        
+        <a href="event-pages\event2.html" class="event-item">
+            <div class="event-image">
+                <img src="img\event2.jpg" alt="Event 2">
+            </div>
+            <div class="event-info">
+                <h4>Agriculture Trade Show</h4>
+                <p>9:30 AM, March 15-16</p>
+            </div>
+        </a>
+        
+        <a href="event-pages\event3.html" class="event-item">
+            <div class="event-image">
+                <img src="img\event3.jpg" alt="Event 3">
+            </div>
+            <div class="event-info">
+                <h4>Piano Recital</h4>
+                <p>5:00 PM, March 21</p>
+            </div>
+        </a>
+        </div>
+    </div>
+</div>
+
+
+    <script src="script.js"></script>
+
+
+</body>
+</html>
