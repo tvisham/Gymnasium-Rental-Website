@@ -64,7 +64,7 @@ Gymnasium-Rental-Website/
 - Venue information page
 
 ## Contributing
-Contributions are welcome! Please fork the repository and submit a pull request. For major changes, open an issue first to discuss what you would like to change.
+Contributions are welcome! Please fork the repository and submit a pull request.
 
 ## License
 This project is licensed under the MIT License.
@@ -73,7 +73,7 @@ This project is licensed under the MIT License.
 Below are screenshots demonstrating the website's main features and user interface. (Screenshots will be added soon.)
 
 ## Contact
-For questions or feedback, please contact the repository owner via GitHub.
+For questions or feedback to colloborate, please contact me via GitHub.
 
 ---
 *Thank you for using the JHS Gymnasium Rental Website!*
