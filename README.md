@@ -70,7 +70,11 @@ Contributions are welcome! Please fork the repository and submit a pull request.
 This project is licensed under the MIT License.
 
 ## Output Screenshots
-Below are screenshots demonstrating the website's main features and user interface. (Screenshots will be added soon.)
+Below are screenshots demonstrating the website's main features and user interface.
+
+![JHS Gymnasium screenshot](JHS%20Gymnasium.png)
+
+*(Screenshot file: `JHS Gymnasium.png`. Add this file to the project root or update the path above if you place it in a subfolder like `screenshots/`.)*
 
 ## Contact
 For questions or feedback to colloborate, please contact me via GitHub.
